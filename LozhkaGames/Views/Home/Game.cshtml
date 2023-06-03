@@ -1,0 +1,157 @@
+﻿@using LozhkaGames.ViewModels
+@using System.Globalization
+@model FullGameViewModel
+
+@{
+    Layout = "MainView";
+    ViewBag.user = Model.user;
+    ViewBag.Title = Model.game.gameName;
+}
+
+<style>
+    .item-link {
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+    }
+
+    .details-section {
+        margin-top: 20px;
+    }
+
+    .carousel-section {
+        margin-top: 20px;
+    }
+
+    .description-section {
+        margin-top: 20px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="preview-section">
+                <img src="@Model.game.GetPreviewImg()" class="img-fluid preview-image" alt="Game Preview" style="object-fit: cover; width: 410px; height: 510px;">
+            </div>
+            <div class="details-section">
+                <div class="genres-platform-section">
+                    <h4>Жанры:</h4>
+                    <div class="genres">
+                        @foreach (var genre in Model.game.GetGenres())
+                        {
+                            <a href="@Url.Action("Details", "Games", new { details = genre })" class="item-link"><span class="genre-text">@genre</span></a>
+                        }
+                    </div>
+                    <br />
+                    <div class="platform">
+                        <h4>Платформа:</h4>
+                        <p>PC</p>
+                    </div>
+                </div>
+                <div class="release-publisher-section">
+                    <h4>Дата выхода:</h4>
+                    <p>@Model.game.date.ToString("d MMMM yyyy", new CultureInfo("ru-RU"))</p>
+                    <h4>Издатель:</h4>
+                    <a href="@Url.Action("Details", "Games", new { details = Model.game.publisher })" class="item-link"><p>@Model.game.publisher</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="buy-section">
+                <h3>Купить @Model.game.gameName</h3>
+                <div class="buy-info">
+                    <div class="price-section">
+                        <p>
+                            <strong style="font-size: 1.8rem;">@Model.game.price.ToString("C0", CultureInfo.GetCultureInfo("ru-RU"))</strong>
+                            <span style="margin-left: 10px;">В наличии @Model.keysAmount</span>
+                        </p>
+                    </div>
+                    <button class="btn btn-primary btn-buy" style="background-color: #fbbb43; color: black; font-size: 1.5rem; padding: 10px 30px; outline: none;" @(Model.keysAmount == 0 ? "disabled" : "") onclick="purchaseGame()">
+                        @if (Model.keysAmount == 0)
+                        {
+                            <span>Нет в наличии</span>
+                        }
+                        else
+                        {
+                            <span>Купить</span>
+                        }
+                    </button>
+                    <p id="error-message" style="color: red; margin-top: 10px;"></p> <!-- Элемент для вывода текста ошибки -->
+                </div>
+            </div>
+            <div class="carousel-section">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style="width: 640px; height: 360px;">
+                    <div class="carousel-inner">
+                        @for (int i = 0; i < Model.game.GetScreenshots().Length; i++)
+                        {
+                            <div class="carousel-item @(i == 0 ? "active" : "")">
+                                <img src="@Model.game.GetScreenshots()[i]" class="d-block mx-auto" style="width: 100%; height: 100%;" alt="Slide @(i + 1)">
+                            </div>
+                        }
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="description-section">
+                <h3>Описание</h3>
+                <p>@Model.game.description</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Добавленный скрипт -->
+<script>
+    function purchaseGame() {
+        var gameId = @Model.game.id;
+        var user = @Json.Serialize(Model.user);
+        if (user === null) {
+            showError("Пожалуйста, войдите или зарегистрируйтесь.");
+        } else {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '@Url.Action("PurchaseGame", "Purchase", new { gameId = "__gameId__", user = "__user__" })'
+                .replace('__gameId__', gameId)
+                .replace('__user__', encodeURIComponent(user)));
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    var fileName = '@Model.game.gameName.Replace(" ", "_")_Key.txt';
+                    downloadTextFile(fileName, xhr.responseText);
+                    location.reload();
+                } else {
+                    showError(xhr.responseText);
+                }
+            };
+            xhr.send();
+        }
+    }
+
+    function downloadTextFile(fileName, content) {
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(content));
+        element.setAttribute('download', fileName);
+        element.style.display = 'none';
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+    }
+
+    function showError(errorMessage) {
+        var errorElement = document.getElementById("error-message");
+        errorElement.innerText = errorMessage;
+        setTimeout(function () {
+            errorElement.innerText = "";
+        }, 3000);
+    }
+</script>

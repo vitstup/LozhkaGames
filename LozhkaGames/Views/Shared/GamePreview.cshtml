@@ -1,0 +1,91 @@
+﻿@using LozhkaGames.Models
+@using System.Globalization
+@model Game
+
+<div class="shop-item" style="width: 250px; height: 400px; position: relative; border-radius: 10px; overflow: hidden;">
+    <a href="@Url.Action("Game","Home", new {id = Model.id})" class="item-link">
+        <div class="item-background" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url('@Model.GetPreviewImg()'); background-size: cover; background-position: center;"></div>
+        <div class="shop-item__content" style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px; color: white;">
+            <div class="shop-item__name" style="font-size: 18px; font-weight: bold;">@Model.gameName</div>
+            <div class="shop-item__price" style="font-size: 16px; font-weight: bold;">@Model.price.ToString("C0", CultureInfo.GetCultureInfo("ru-RU"))</div>
+        </div>
+        <div class="item-overlay"></div>
+        <div class="item-button">
+            <div class="button-content">Подробнее</div>
+        </div>
+    </a>
+</div>
+
+<style>
+    .shop-item {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 0 transparent;
+    }
+
+        .shop-item:hover {
+            box-shadow: 0 0 10px #fbbb43;
+        }
+
+            .shop-item:hover .item-background {
+                opacity: 0.8;
+            }
+
+            .shop-item:hover .item-overlay {
+                opacity: 0.6;
+            }
+
+    .item-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+    }
+
+    .item-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fbbb43;
+        border-radius: 5px;
+        width: 120px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 2;
+    }
+
+    .button-content {
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .shop-item:hover .item-button {
+        opacity: 1;
+    }
+
+    .item-link {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var shopItem = document.querySelector(".shop-item");
+        var itemLink = document.querySelector(".item-link");
+        shopItem.addEventListener("click", function () {
+            itemLink.click();
+        });
+    });
+</script>

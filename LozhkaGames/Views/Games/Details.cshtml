@@ -1,0 +1,22 @@
+﻿@using LozhkaGames.ViewModels
+@using LozhkaGames.Models
+
+@model SearchViewModel
+
+@{
+    Layout = "MainView";
+    ViewBag.user = Model.user;
+    ViewBag.Title = "Search";
+}
+
+<div class="container">
+    <h1>По запросу @Model.request найдено: @Model.games.Length</h1>
+    <div class="row">
+        @foreach (Game game in Model.games)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                @Html.Partial("GamePreview", game)
+            </div>
+        }
+    </div>
+</div>

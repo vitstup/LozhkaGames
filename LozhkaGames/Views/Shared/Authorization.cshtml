@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "Login/Register";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        @if (Model)
+        {
+            <h2>Регистрация</h2>
+            <form id="registerForm" method="post" action="/Authorization/Register" onsubmit="event.preventDefault(); register();">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Введите email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Введите пароль">
+                </div>
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                <p id="registerErrorText" style="color: red; display: none;"></p>
+            </form>
+
+            <script>
+                function register() {
+                    var form = document.getElementById("registerForm");
+                    var formData = new FormData(form);
+
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("POST", form.action);
+                    xhr.onload = function () {
+                        if (xhr.status === 200) {
+                            var loginForm = document.getElementById("loginForm");
+                            loginForm.email.value = form.email.value;
+                            loginForm.password.value = form.password.value;
+                            login();
+                        } else {
+                            var result = xhr.responseText;
+                            showRegisterError(result); // Показать ошибку регистрации
+                        }
+                    };
+                    xhr.send(formData);
+                }
+
+                function showRegisterError(errorMessage) {
+                    var errorText = document.getElementById("registerErrorText");
+                    errorText.style.display = "block";
+                    errorText.textContent = errorMessage;
+
+                    // Скрыть ошибку через 3 секунды
+                    setTimeout(function () {
+                        errorText.style.display = "none";
+                        errorText.textContent = "";
+                    }, 3000);
+                }
+            </script>
+        }
+        else
+        {
+            <h2>Вход</h2>
+            <form id="loginForm" method="post" action="/Authorization/Login" onsubmit="event.preventDefault(); login();">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Введите email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Введите пароль">
+                </div>
+                <button type="submit" class="btn btn-primary">Войти</button>
+                <p id="loginErrorText" style="color: red; display: none;"></p>
+            </form>
+
+            <script>
+                function login() {
+                    var form = document.getElementById("loginForm");
+                    var formData = new FormData(form);
+
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("POST", form.action);
+                    xhr.onload = function () {
+                        if (xhr.status === 200) {
+                            location.reload(); // Обновление страницы
+                        } else {
+                            var result = xhr.responseText;
+                            showLoginError(result); // Показать ошибку входа
+                        }
+                    };
+                    xhr.send(formData);
+                }
+
+                function showLoginError(errorMessage) {
+                    var errorText = document.getElementById("loginErrorText");
+                    errorText.style.display = "block";
+                    errorText.textContent = errorMessage;
+
+                    // Скрыть ошибку через 3 секунды
+                    setTimeout(function () {
+                        errorText.style.display = "none";
+                        errorText.textContent = "";
+                    }, 3000);
+                }
+            </script>
+        }
+    </div>
+</body>
+</html>

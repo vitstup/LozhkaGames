@@ -1,0 +1,42 @@
+﻿@using LozhkaGames.ViewModels
+@using LozhkaGames.Models
+
+@model GamesViewModel
+
+@{
+    Layout = "MainView";
+    ViewBag.Title = "LozhkaGames";
+    ViewBag.user = Model.user;
+
+    DateTime currentDate = DateTime.Now;
+    DateTime threeMonthsAgo = currentDate.AddMonths(-3);
+    List<Game> newGames = Model.games.Where(game => game.date < currentDate && game.date > threeMonthsAgo)
+                                     .OrderBy(game => game.date)
+                                     .ToList();
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 mb-4">
+            <h2>Новинки</h2>
+            <div class="row justify-content-center">
+                @for (int i = 0; i < newGames.Count && i < 4; i++)
+                {
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        @Html.Partial("GamePreview", newGames[i])
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <h2>Каталог</h2>
+        @foreach (Game game in Model.games)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                @Html.Partial("GamePreview", game)
+            </div>
+        }
+    </div>
+</div>

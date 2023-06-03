@@ -1,0 +1,152 @@
+﻿@using LozhkaGames.Models
+
+@{
+    User user = ViewBag.user;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="icon" href="/img/other/icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/other/icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <style>
+        main {
+            padding-top: calc(4rem + 1px); /* 4rem - высота header, 1px - дополнительный пиксель для избежания обрезания */
+        }
+
+        .auth-form {
+            position: absolute;
+            top: 60px;
+            right: 15px;
+            z-index: 999;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header data-bs-theme="dark" class="mt-4">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img id="logoImage" src="/img/other/icon.png" alt="LozhkaGames" style="width: 40px; height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link @if(ViewBag.Selected == "Catalog") { <text>active</text> } else { <text></text> }" aria-current="page" href="/games/catalog">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @if(ViewBag.Selected == "FAQ") { <text>active</text> } else { <text></text> }" aria-current="page" href="/faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @if(ViewBag.Selected == "About") { <text>active</text> } else { <text></text> }" aria-current="page" href="/about">О сайте</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search" onkeydown="handleSearch(event)">
+                        <button class="btn btn-outline-success" type="button" onclick="performSearch()">Поиск</button>
+                    </form>
+
+                    <!-- Добавленный код для кнопок Войти и Зарегистрироваться -->
+                    <ul class="navbar-nav ms-3">
+                        @if (user != null)
+                        {
+                            <li class="nav-item">
+                                <button onclick="logout()" class="nav-link">Выйти</button>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <button class="nav-link" onclick="toggleLoginForm()">Войти</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" onclick="toggleRegistrationForm()">Зарегистрироваться</button>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="loginFormContainer" class="auth-form" style="display: none;">
+        @Html.Partial("Authorization", false)
+    </div>
+
+    <div id="registrationFormContainer" class="auth-form" style="display: none;">
+        @Html.Partial("Authorization", true)
+    </div>
+
+    <script>
+        function toggleLoginForm() {
+            var loginFormContainer = document.getElementById("loginFormContainer");
+            var registrationFormContainer = document.getElementById("registrationFormContainer");
+
+            if (loginFormContainer.style.display === "none") {
+                loginFormContainer.style.display = "block";
+                registrationFormContainer.style.display = "none";
+            } else {
+                loginFormContainer.style.display = "none";
+            }
+        }
+
+        function toggleRegistrationForm() {
+            var loginFormContainer = document.getElementById("loginFormContainer");
+            var registrationFormContainer = document.getElementById("registrationFormContainer");
+
+            if (registrationFormContainer.style.display === "none") {
+                registrationFormContainer.style.display = "block";
+                loginFormContainer.style.display = "none";
+            } else {
+                registrationFormContainer.style.display = "none";
+            }
+        }
+
+        function logout() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/Authorization/Logout");
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    location.reload(); // Обновление страницы
+                }
+            };
+            xhr.send();
+        }
+        function performSearch() {
+            var searchInput = document.getElementById("searchInput");
+            var searchText = searchInput.value;
+
+            // Перенаправление на страницу с деталями игр с использованием Url.Action
+            window.location.href = '@Url.Action("Details", "Games")?details=' + encodeURIComponent(searchText);
+        }
+        function handleSearch(event) {
+            if (event.keyCode === 13) { // Код клавиши Enter равен 13
+                performSearch();
+                event.preventDefault(); // Предотвращаем отправку формы, если она есть на странице
+            }
+        }
+    </script>
+
+    <main>
+        @RenderBody()
+        <footer class="container">
+            <p class="float-end"><a href="#top"><i class="bi bi-arrow-up-circle fs-3"></i></a></p>
+            <p>© 2023 LozhkaGames, Nordcode Inc.</p>
+        </footer>
+    </main>
+</body>
+</html>

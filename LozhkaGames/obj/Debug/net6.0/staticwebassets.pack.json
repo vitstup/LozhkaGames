@@ -1,0 +1,497 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\LozhkaGames.bundle.scp.css",
+      "PackagePath": "staticwebassets\\LozhkaGames.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\aow\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\aow\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\aow\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\aow\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\aow\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\aow\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\aow\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\aow\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\dp\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\dp\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\dp\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\dp\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\dp\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\dp\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\dp\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\dp\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\dp\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\dp\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\er\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\er\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\er\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\er\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\er\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\er\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\er\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\er\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\er\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\er\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\hoi\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\hoi\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\hoi\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\hoi\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\hoi\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\hoi\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\hoi\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\hoi\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\hoi\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\hoi\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\lotr\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\lotr\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\lotr\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\lotr\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\lotr\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\lotr\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\lotr\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\lotr\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\lotr\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\lotr\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mb\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mb\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mb\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mb\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mb\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mb\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mb\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mb\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mb\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mb\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mc\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mc\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mc\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mc\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mc\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mc\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mc\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mc\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mc\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mc\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mgt\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mgt\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mgt\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mgt\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mgt\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mgt\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\mgt\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\mgt\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\re\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\re\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\re\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\re\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\re\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\re\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\re\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\re\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\re\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\re\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\rtw\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\rtw\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\rtw\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\rtw\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\rtw\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\rtw\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\rtw\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\rtw\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\squad\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\squad\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\squad\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\squad\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\squad\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\squad\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\squad\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\squad\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\squad\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\squad\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\wd\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\wd\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\wd\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\wd\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\wd\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\wd\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\wd\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\wd\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\games\\wd\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\games\\wd\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\img\\other\\icon.png",
+      "PackagePath": "staticwebassets\\img\\other\\icon.png"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\vitus\\Desktop\\Vs Projects\\LozhkaGames\\LozhkaGames\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.LozhkaGames.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.LozhkaGames.props",
+      "PackagePath": "build\\LozhkaGames.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.LozhkaGames.props",
+      "PackagePath": "buildMultiTargeting\\LozhkaGames.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.LozhkaGames.props",
+      "PackagePath": "buildTransitive\\LozhkaGames.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
