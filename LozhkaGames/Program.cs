@@ -11,9 +11,8 @@ builder.Services.AddTransient<IUsersRepository, UsersRepository>();
 builder.Services.AddTransient<IGamesRepository, GamesRepository>();
 builder.Services.AddTransient<IKeysRepository, KeysRepository>();
 
-//builder.Services.AddDbContext<ShopDbContext>(options => options.UseSqlServer("Server=DESKTOP-ANKHDH7;Database=LozhkaGamesDatabase;Trusted_Connection=True;TrustServerCertificate=true;"));
 builder.Services.AddDbContext<ShopDbContext>(options =>
-    options.UseSqlServer("Server=95.140.157.189;Database=LozhkaGamesDatabase;User Id=sa;Password=Abdula777999;TrustServerCertificate=True;"));
+    options.UseSqlServer("Connection string"));
 
 builder.Services.AddSession(options =>
 {
